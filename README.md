@@ -1,4 +1,4 @@
-# Are we mean today
+# Are we mean today?
 Daily grumpiness compass. 
 
 
