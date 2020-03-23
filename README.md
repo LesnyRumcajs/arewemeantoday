@@ -1,4 +1,6 @@
 # Are we mean today?
+[![Codeship Status for LesnyRumcajs/arewemeantoday](https://app.codeship.com/projects/5e581c40-4f7a-0138-b9da-2213627debf2/status?branch=master)](https://app.codeship.com/projects/389950)
+
 Daily grumpiness compass. 
 
 
