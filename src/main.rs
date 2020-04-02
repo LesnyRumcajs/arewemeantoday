@@ -12,11 +12,12 @@ use digest::Digest;
 use sha2::Sha256;
 
 static RESOURCE_DIRECTORY: &str = "static";
+static SALT: &str = "f07Y4QY8Zwk1eUmQC6ZxayfT";
 
 fn mean_check() -> bool {
     let mut hasher = Sha256::new();
     let now = Utc::now();
-    hasher.input(format!("{}{}{}", now.year(), now.month(), now.day()).as_bytes());
+    hasher.input(format!("{}{}{}{}", SALT, now.year(), now.month(), now.day()).as_bytes());
     hasher.result().fold(0, |acc, x| acc + x.count_ones()) % 2 == 0
 }
 
