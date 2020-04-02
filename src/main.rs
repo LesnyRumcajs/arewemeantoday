@@ -48,6 +48,6 @@ mod tests {
         let mean_days = (0..10000i64)
             .filter(|x| mean_check(date + Duration::days(*x)))
             .count();
-        assert!(mean_days > 4000 && mean_days < 6000)
+        assert!(mean_days > 4500 && mean_days < 5500)
     }
 }
